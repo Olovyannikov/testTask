@@ -43,3 +43,6 @@
 <[Дополнительно напишите нам, как вы тестировали результат своей работы. Какие используете инструменты и как вы осуществляете тестирование.]>
 * IDE - phpStorm (emmet, w3c validator, liveReload).
 * Chrome DevTools + Toggle Device - для проверки и отладки макета.
+
+**Demo:**
+https://olovyannikov.github.io/testTask/
