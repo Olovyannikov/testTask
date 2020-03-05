@@ -299,6 +299,16 @@ header .header-main {
     background-position: center;
 }
 
+.page-main .image-content {
+    position: relative;
+}
+
+.page-main .image-content a.youtube {
+    position: absolute;
+    right: 30px;
+    bottom: -350px;
+}
+
  .package {
     font-style: normal;
     font-weight: 500;
