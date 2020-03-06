@@ -1018,7 +1018,7 @@ ul.switch-lang {
     font-weight: 500;
     font-size: 18px;
 }
-@media (max-width: 320px) {
+@media (max-width: 568px) {
     .modal-dialog {
         max-width: 290px;
         margin: 30px auto; /* для отображения модального окна по центру */
@@ -1306,7 +1306,7 @@ table.mobile {
     display: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 568px) {
     body {
         max-width: 100%;
         margin: 0 auto;
