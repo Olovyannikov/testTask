@@ -14,6 +14,15 @@ body {
 
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
 hr {
     border: 1px solid #C7C7C7;
 }
@@ -39,7 +48,6 @@ hr {
 
 .contacts-header a {
     width: 108px;
-    height: 18px;
 
     margin: 41px 0;
     vertical-align: middle;
@@ -62,7 +70,6 @@ div.account {
 .contacts-header a::before {
     content: "Телефон:";
     width: 66px;
-    height: 18px;
 
     font-style: normal;
     font-weight: normal;
@@ -81,7 +88,6 @@ header .header-main {
 
 .header-main > p {
     width: 887px;
-    height: 89px;
     margin-left: 392px;
     padding-top: 286px;
 
@@ -193,10 +199,6 @@ header .header-main {
     color: #FFFFFF;
 }
 
- .container {
-    width: 1200px;
-    margin: 0 auto;
-}
 
 .page-main h1 {
     width: 460px;
@@ -317,7 +319,6 @@ header .header-main {
 
     padding-bottom: 37px;
     width: 219px;
-    height: 24px;
     color: #37373F;
 }
 
@@ -429,7 +430,7 @@ header .header-main {
 /* когда чекбокс активен показываем блоки с содержанием  */
 .hide:checked + label + .hide-text {
     display: block;
-    padding: 10px;
+    margin-bottom: 20px;
 }
 
 
@@ -1370,17 +1371,14 @@ table.mobile {
         width: 100%;
         height: 655px;
         overflow: hidden;
-        background: url(../img/helicopter-main.jpg) no-repeat;
-        background-position: 65%;
+        background: url(../img/helicopter-main.jpg) no-repeat 65%;
     }
 
     .header-main p {
         margin-top: 0;
         margin-left: 0;
         margin-bottom: 36px;
-        padding: 0;
-        padding-top: 140px;
-        padding-left: 10px;
+        padding: 140px 0 0 10px;
         width: 264px;
         height: 155px;
         font-size: 32px;
@@ -1446,9 +1444,7 @@ table.mobile {
         line-height: 34px;
         text-align: center;
 
-        margin: 0 auto;
-        margin-top: 60px;
-        margin-bottom: 30px;
+        margin: 60px auto 30px;
     }
 
     article.photo-package {
@@ -1463,8 +1459,7 @@ table.mobile {
     .slider {
         display: inline-block;
         position: relative;
-        margin: auto;
-        margin-bottom: 15px;
+        margin: auto auto 15px;
     }
 
     /* Картинка мастабируется по отношению к родительскому элементу */
@@ -1569,8 +1564,7 @@ table.mobile {
     }
 
     .about h2.package {
-        margin: 0;
-        margin-top: 45px;
+        margin: 45px 0 0;
         padding-bottom: 14px;
         font-size: 18px;
         line-height: 26px;
@@ -1624,9 +1618,7 @@ table.mobile {
     }
 
     table.mobile th {
-        padding: 0;
-        padding-left: 45px;
-        padding-top: 20px;
+        padding: 20px 0 0 45px;
         height: 30px;
     }
 
@@ -1760,7 +1752,7 @@ table.mobile {
         cursor: pointer;
         display: inline-block;
         height: 8px;
-        margin: 25px 0px 0 16px;
+        margin: 25px 0 0 16px;
         position: relative;
         width: 8px;
         border-radius: 50%;
@@ -1787,7 +1779,7 @@ table.mobile {
     }
 
     .order-mobile {
-        border: 0.5px solid #B3B3B3;
+        border: 1px solid #B3B3B3;
     }
 
     .order-mobile a {

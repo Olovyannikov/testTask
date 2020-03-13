@@ -2,34 +2,34 @@
 <html lang="ru">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style2.css">
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>testTask</title>
 </head>
 <body>
 <header>
     <section class="contacts-header">
-        <div class="container">
+        <div class="container flex">
             <div class="logo">
         <img width="129" height="23" src="img/svg/logo.svg" class="logo" alt="mainLogo">
-
-                <a class="location">Москва</a>
-                <div class="account">
-                    <img src="img/svg/account.svg" alt="" class="account">
-                </div>
             </div>
             <div class="telephone">
-        <a class="telephone" href="tel:+7-800-123-12-12">8(800)-123-12-12</a>
+                <a class="telephone" href="tel:+7-800-123-12-12"><span class="telephone__number">Телефон:</span>8(800)-123-12-12</a>
             </div>
 
+
+
+            <div class="account">
+                <a class="location">Москва</a>
+                <img src="img/svg/account.svg" alt="" class="account">
+            </div>
         </div>
     </section>
 
     <section class="header-main">
-        <p>Эксклюзивная <span>фотосессия</span> при полете на вертолете</p>
+        <div class="container">
+        <p class="header-main--text">Эксклюзивная <span>фотосессия</span> при полете на вертолете</p>
         <div class="price">
         <p>Стоимость:
          <b>1500₽</b>
@@ -82,19 +82,18 @@
             </div>
             </div>
         </div>
+        </div>
     </section>
 </header>
 
+
+
+
 <main class="page-main">
-    <div class="container">
-        <h1>Фотосессия <br>
+    <div class="container flex">
+        <div class="page-main__about flex">
+        <h1 class="page-main__heading">Фотосессия <br>
             в вертолете</h1>
-        <div class="image-content">
-            <img src="img/pack-3.jpg" alt="">
-            <a href="#" class="youtube"><img src="img/svg/play.svg" alt=""></a>
-        </div>
-
-
         
  <p class="description">Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты</p>
         <ul class="moments">
@@ -104,16 +103,22 @@
             <li>Готовы ответить на любые вопросы</li>
         </ul>
 
-        <hr>
-
         <p class="reviews">Более 50 отзывов с оценкой </p>
         <br>
-        <hr>
+
+        </div>
+        <div class="page-main__photo flex">
+            <div class="image-content">
+                <img class="main-photo" src="img/pack-3.jpg" alt="">
+                <a href="#" class="youtube"><img src="img/svg/play.svg" alt=""></a>
+            </div>
+        </div>
+
         <h2 class="package">Фотографии пакета:</h2>
 
         <article class="photo-package">
 
-            <div class="photo-container">
+            <div class="photo-container ">
                 <img src="img/pack-1.jpg" alt="">
                 <img src="img/pack-2.jpg" alt="">
                 <img src="img/pack-3.jpg" alt="">
@@ -124,9 +129,9 @@
                 <img src="img/pack-2.jpg" alt="">
             </div>
             <input type="checkbox" id="hd-1" class="hide">
-            <label for="hd-1" >Показать все фото</label>
+            <label class="more-photos" for="hd-1" >Показать все фото</label>
 
-            <div class="photo-container hide-container">
+            <div class="photo-container  hide-container">
                 <img src="img/pack-1.jpg" alt="">
                 <img src="img/pack-2.jpg" alt="">
                 <img src="img/pack-3.jpg" alt="">
@@ -160,26 +165,15 @@
             <span class="slider-dots_item" onclick="currentSlide(2)"></span>
             <span class="slider-dots_item" onclick="currentSlide(3)"></span>
         </div>
-        <hr>
     </div>
 
 </main>
 
 <section class="about">
-    <div class="container">
-        <div class="image-content">
-            <div class="avatar">
-            <img class="firstimg" src="img/Ellipse.png" alt="">
-            <img class="before-img" src="img/svg/heart.svg" alt="">
-            </div>
-            <h3>Марина Иванова</h3>
-            <p>Фотограф</p>
-            <p><a href="#">Показать больше <br>
-                информации о фотографе</a></p>
+    <div class="container flex">
+        <div class="about__main">
 
-        </div>
-
-        <h2 class="about-org">Об организаторе:</h2>
+        <h2 class="package prefer">Об организаторе:</h2>
         <p class="about-me">Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания клиентов, специализирующихся на совместном использовании и частных турах. </p>
 
            <p class="extra"> Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету
@@ -187,7 +181,7 @@
             и не свяжемся…</p>
 
         <input type="checkbox" id="hd-2" class="hide">
-        <label for="hd-2" >Читать еще</label>
+        <label class="more-text" for="hd-2" >Читать еще</label>
 
         <p class="hide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolor natus neque numquam quidem quisquam repellendus! Aperiam dicta id provident quas! Dolorum facere fuga nulla perferendis quia ratione repellendus veniam?</p>
 
@@ -199,12 +193,29 @@
 
 
         <input type="checkbox" id="hd-3" class="hide">
-        <label for="hd-3" >Читать еще</label>
+        <label class="more-text last" for="hd-3" >Читать еще</label>
 
         <p class="hide-text prefer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolor natus neque numquam quidem quisquam repellendus! Aperiam dicta id provident quas! Dolorum facere fuga nulla perferendis quia ratione repellendus veniam?</p>
+
+
             <hr>
         </section>
+    </div>
 
+        <div class="about__side flex">
+            <div class="image-content">
+                <div class="avatar">
+                    <span>
+                    <img class="firstimg" src="img/Ellipse.png" alt="">
+</span>
+                    <h3 class="about__header">Марина Иванова</h3>
+                </div>
+                <p>Фотограф</p>
+                <p><a href="#">Показать больше <br>
+                    информации о фотографе</a></p>
+
+            </div>
+        </div>
     </div>
 </section>
 
