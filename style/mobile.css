@@ -1,0 +1,575 @@
+@media (max-width: 568px) {
+    .modal-dialog {
+        max-width: 290px;
+        margin: 30px auto; /* для отображения модального окна по центру */
+    }
+
+    .modal-content {
+
+        max-width: 290px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    }
+
+    form {
+        padding: 0!important;
+    }
+
+    form input {
+        width: 270px;
+    }
+
+    .modal-header h3 {
+        margin-left: 40px;
+    }
+
+    .half-width {
+        width: 270px!important;
+    }
+
+    #valid {
+        border-right: 1px solid rgba(0,0,0,.2)!important;
+        border-radius: 0!important;
+    }
+
+    #cvv {
+        border-bottom-left-radius: 3px ;
+    }
+
+    a.close {
+        padding-bottom: 0;
+    }
+
+    .data-form label {
+        width: 247px !important;
+        height: 79px !important;
+        margin-bottom: 23px !important;
+    }
+
+    .buttons button {
+        width: 250px!important;
+        height: 50px!important;
+        padding: 0!important;
+    }
+
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 290px;
+    }
+
+    .buttons {
+        text-align: left;
+    }
+
+    .telephone {
+        display: none;
+    }
+
+    .contacts-header {
+        margin-top: 20px;
+        height: 40px;
+    }
+
+    .contacts-header .container {
+        height: 40px;
+    }
+
+    .contacts-header div.logo {
+        display: flex;
+        margin-right: 0;
+        width: 290px;
+        justify-content: space-between;
+    }
+
+    .contacts-header div.account {
+        display: inline;
+        height: 20px;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .contacts-header img.logo {
+        width: 86px;
+    }
+
+    a.location {
+        display: block;
+        margin: 0;
+        width: 56px;
+        align-self: flex-end;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #5286EC;
+    }
+
+    a.location::before {
+        content: '';
+    }
+
+    header .header-main {
+        width: 100%;
+        height: 655px;
+        overflow: hidden;
+        background: url(../img/helicopter-main.jpg) no-repeat 65%;
+    }
+
+    .header-main p {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 36px;
+        padding: 140px 0 0 10px;
+        width: 264px;
+        height: 155px;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .header-main .price {
+        margin-left: 10px;
+    }
+
+    .header-main a.btn {
+        margin-left: 10px;
+    }
+
+    .page-main .image-content img {
+        width: 290px;
+        height: 197px;
+        margin-bottom: 30px;
+    }
+
+    .page-main h1 {
+        width: 290px;
+        text-align: center;
+    }
+
+    .page-main p.description {
+        width: 290px;
+        height: 300px;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #37373F;
+    }
+
+    .page-main p.reviews {
+        width: 290px;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #37373F;
+
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 14px;
+    }
+
+    .page-main hr {
+        margin: 0;
+        width: 290px;
+    }
+
+
+    .page-main p.reviews::before {
+        margin-right: 12px;
+    }
+
+    h2.package {
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+
+        margin: 60px auto 30px;
+    }
+
+    article.photo-package {
+        display: none;
+    }
+
+    hr {
+        max-width: 290px;
+    }
+
+    /* Собственно сам слайдер */
+    .slider {
+        display: inline-block;
+        position: relative;
+        margin: auto auto 15px;
+    }
+
+    /* Картинка мастабируется по отношению к родительскому элементу */
+    .slider .item img {
+        object-fit: cover;
+        width: 100%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Кнопки вперед и назад */
+    .slider .prev, .slider .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .slider .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* При наведении на кнопки добавляем фон кнопок */
+    .slider .prev:hover,
+    .slider .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Заголовок слайда */
+    .slideText {
+        position: absolute;
+        color: #fff;
+        font-size: 35px;
+        /* Выравнивание текста по горизонтали и по вертикали*/
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        /* Тень*/
+        text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+    }
+
+    .active,
+    .slider-dots_item:hover {
+        background-color: #aaa;
+    }
+
+    /* Анимация слайдов */
+    .slider .item {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+
+    .about .image-content {
+        max-width: 290px;
+    }
+
+    .about .image-content img {
+        margin: 0;
+    }
+
+    .about .image-content .avatar {
+        width: 185px;
+        margin: 0 auto;
+    }
+
+    .about .image-content h3 {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about .image-content p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .about h2.package {
+        margin: 45px 0 0;
+        padding-bottom: 14px;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: left;
+        color: #37373F;
+    }
+
+
+    .about .about-me {
+        width: 290px;
+        height: 250px;
+        margin-top: 14px;
+    }
+
+    .about .extra {
+        width: 290px;
+        height: 160px;
+    }
+
+    .about .hide-text {
+        width: 290px;
+    }
+
+    .prefer p {
+        width: 290px;
+    }
+
+    .prefer hr {
+        display: none;
+    }
+
+    .about section.prefer label:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .upcoming-event h2 {
+        width: 300px;
+        margin-top: 26px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    table {
+        display: none;
+    }
+
+    table.mobile {
+        display: block;
+        width: 290px;
+        height: 520px;
+    }
+
+    table.mobile th {
+        padding: 20px 0 0 45px;
+        height: 30px;
+    }
+
+    table.mobile th::after {
+        background: none;
+        height: 0;
+    }
+
+    table.mobile a {
+        margin: 0;
+    }
+
+    table.mobile .btn-container {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    table.mobile .reviews {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .map {
+        width: 100%;
+        background-position: 56%;
+        margin-bottom: 0;
+    }
+
+    .map .order {
+        display: none;
+    }
+
+    .mobile-order {
+        display: block;
+        margin-top: 52px;
+    }
+
+
+    .wrapper {
+        height: 200px;
+        margin: 50px auto 0;
+        position: relative;
+        width: 275px;
+    }
+
+    .mobile-order .slider {
+        height: inherit;
+        overflow: hidden;
+        position: relative;
+        width: inherit;
+    }
+
+    .slides {
+        height: inherit;
+        opacity: 0;
+        position: absolute;
+        width: inherit;
+        z-index: 0;
+        transform: scale(1.5);
+        transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    }
+
+    .first-slide {
+
+        width: 66px;
+        height: 66px;
+        background: #FC9B09;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+
+    .slide1::after {
+        content: 'Где встречаемся?  Москва';
+        display: block;
+        width: 150px;
+        margin: 10px auto 0;
+
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .slide2 {
+        content: 'Где встречаемся?  Москва';
+        display: block;
+        width: 150px;
+        margin: 10px auto 0;
+
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .slide3 {
+        content: 'Где встречаемся?  Москва';
+        display: block;
+        width: 150px;
+        margin: 10px auto 0;
+
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+
+    #slide1:checked ~ .slider > .slide1,
+    #slide2:checked ~ .slider > .slide2,
+    #slide3:checked ~ .slider > .slide3 {
+        opacity: 1;
+        z-index: 1;
+        transform: scale(1);
+    }
+
+    .wrapper > input {
+        display: none;
+    }
+
+    .wrapper .controls {
+        z-index: 1;
+        left: 30%;
+        top: 100px;
+        position: absolute;
+        width: 100%;
+    }
+
+    .wrapper label {
+        cursor: pointer;
+        display: inline-block;
+        height: 8px;
+        margin: 25px 0 0 16px;
+        position: relative;
+        width: 8px;
+        border-radius: 50%;
+        transition: background ease-in-out .5s;
+        border: 1px solid black;
+    }
+
+    .wrapper label:hover,
+    #slide1:checked ~ .controls label:nth-of-type(1),
+    #slide2:checked ~ .controls label:nth-of-type(2),
+    #slide3:checked ~ .controls label:nth-of-type(3) {
+        background: #FC9B09;
+    }
+
+    .wrapper label:after {
+        content: " ";
+        display: block;
+        height: 12px;
+        left: -4px;
+        position: absolute;
+        top: -4px;
+        width: 12px;
+        border-radius: 50%;
+    }
+
+    .order-mobile {
+        border: 1px solid #B3B3B3;
+    }
+
+    .order-mobile a {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .comment-container {
+        margin-top: 40px;
+    }
+
+    .comment {
+        position: relative;
+    }
+
+    .comment-container .remarks {
+        display: inline-flex;
+        position: absolute;
+        top: 115px;
+        left: -45px;
+    }
+
+    .comment-container .comment-text {
+        width: 290px;
+        min-height: 147px;
+    }
+
+    .comment {
+        height: 497px;
+    }
+
+    footer, .footer-main {
+        max-width: 320px;
+    }
+
+    .logo-footer {
+        width: 84px;
+        height: 15px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .switch-lang {
+        display: none;
+    }
+
+    .image-content a {
+        display: none;
+    }
+}

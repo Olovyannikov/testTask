@@ -3,6 +3,16 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="style/style2.css">
+    <link rel="stylesheet" href="style/mobile.css">
+
+
+
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
     <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>testTask</title>
@@ -207,7 +217,7 @@
                 <div class="avatar">
                     <span>
                     <img class="firstimg" src="img/Ellipse.png" alt="">
-</span>
+                    </span>
                     <h3 class="about__header">Марина Иванова</h3>
                 </div>
                 <p>Фотограф</p>
@@ -249,7 +259,7 @@
                 <td>Осталось - 1 место</td>
             </tr>
             <tr class="border-top">
-                <td class="reviews" colspan="4">Более 50 отзывов с оценкой</td>
+                <td class="reviews" colspan="4"><span> Более 50 отзывов с оценкой</span></td>
             </tr>
         </table>
 
@@ -291,25 +301,27 @@
 <section class="map">
     <div class="container">
  <div class="order">
-     <ol>
+     <ol class="flex">
      <li> <span class="riddle">
          <b>Где встречаемся?</b> <br> Москва
      </span>
      </li>
-     <li> <span>
+     <li> <span class="riddle">
          <b>Время съемки</b> <br> 3 часа
          </span>
      </li>
-     <li> <span>
+     <li> <span class="riddle">
          <b>Мест осталось</b> <br> 2 места
          </span>
      </li>
      </ol>
-     <article class="person">
-         <img src="img/Ellipse.png" alt="">
+     <article class="person flex">
+         <img width="67" height="67" src="img/Ellipse.png" alt="">
+         <span class="person__about--wrapper">
          <h2>Мария Иванова</h2>
          <p>Фотограф</p>
          <a href="#">Показать больше информации</a>
+             </span>
      </article>
  </div>
 
@@ -355,61 +367,74 @@
     <h2 class="comment-out package">
         Отзывы:
     </h2>
-        <div class="comment">
-        <div class="comment-avatar"></div>
+        <div class="comment flex">
+        <div class="comment-avatar">
+            <img src="./img/Ellipse2.png" alt="">
+        </div>
+            <div class="comment__info">
         <div class="comment-author">Валерия Антонова</div>
         <div class="comment-job">Арт-директор</div>
             <div class="marks"></div>
             <div class="remarks">Супер! Я бы заказала съемку снова!</div>
+            </div>
             <div class="comment-text">
             Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!
             <div class="comment-date">27 Апреля, 2019г.</div>
-                <hr>
+
             </div>
     </div>
 
 
-        <div class="comment">
-            <div class="comment-avatar"></div>
+        <div class="comment flex">
+            <div class="comment-avatar">
+                <img src="./img/Ellipse3.png" alt=""></div>
+            <div class="comment__info">
             <div class="comment-author">Виталий Петров</div>
             <div class="comment-job">Фотограф</div>
             <div class="marks"></div>
             <div class="remarks">Супер! Я бы заказал съемку снова!</div>
+            </div>
             <div class="comment-text">
                 Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление.
                 Организация полёта отличная. Спасибо!
                 <div class="comment-date">19 Апреля, 2019г.</div>
-                <hr>
+
             </div>
         </div>
 
-        <div class="comment">
-            <div class="comment-avatar"></div>
+        <div class="comment flex">
+            <div class="comment-avatar">
+                <img src="./img/Ellipse4.png" alt=""></div>
+            <div class="comment__info">
             <div class="comment-author">Джим Керри</div>
             <div class="comment-job"></div>
             <div class="marks"></div>
             <div class="remarks">Супер! Я бы заказал съемку снова!</div>
+            </div>
             <div class="comment-text">
                 Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы
                 с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!
                 <div class="comment-date">11 Апреля, 2019г.</div>
-                <hr>
+
             </div>
         </div>
         <input type="checkbox" id="hd-4" class="hide">
         <label for="hd-4">Показать все (134)</label>
         <div class=" hide-container">
-            <div class="comment">
-                <div class="comment-avatar"></div>
+            <div class="comment flex">
+                <div class="comment-avatar">
+                    <img src="./img/Ellipse4.png" alt=""></div>
+                <div class="comment__info">
                 <div class="comment-author">Джим Керри</div>
                 <div class="comment-job"></div>
                 <div class="marks"></div>
                 <div class="remarks">Супер! Я бы заказал съемку снова!</div>
+                </div>
                 <div class="comment-text">
                     Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы
                     с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!
                     <div class="comment-date">11 Апреля, 2019г.</div>
-                    <hr>
+
                 </div>
             </div>
         </div>
@@ -417,31 +442,31 @@
 </section>
 
 <section class="footer">
-    <div class="container">
-        <ul class="switch-lang">
-            <li><a href="" class="switch">ru</a></li>
-        </ul>
-        <img src="img/svg/logo.svg" alt="" class="logo-footer">
+    <div class="container flex">
+        <a href="#"> <img src="img/svg/logo.svg" alt="" class="logo-footer"></a>
         <ul class="social">
             <li><a href="#" class="social-btn-vk"></a>VK</li>
-            <li><a href="#" class="social-btn-in"></a>In </li>
             <li><a href="#" class="social-btn-fb"></a>fb</li>
+            <li><a href="#" class="social-btn-in"></a>In </li>
+        </ul>
+        <ul class="switch-lang">
+            <li><a href="" class="switch">ru</a></li>
         </ul>
     </div>
 
 </section>
 
 <footer class="footer-main">
-    <div class="container">
-        <div class="payback">
-            <ul>
+    <div class="container flex">
+        <div class="payback ">
+            <ul class="flex">
                 <li>
                     <img src="img/svg/mcIcon.svg" alt=""></li>
                 <li>
                     <img src="img/svg/visaIcon.svg" alt=""></li>
             </ul>
         </div>
-        <div class="support">Тех. поддержка: 8(800)700-00-00 <br>
+        <div class="support flex">Тех. поддержка: 8(800)700-00-00 <br>
 
         © 2018 HELYFLY. All Rights Reserved.</div>
     </div>
