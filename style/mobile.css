@@ -11,7 +11,7 @@
     }
 
     form {
-        padding: 0!important;
+        padding: 0;
     }
 
     form input {
@@ -68,27 +68,29 @@
         display: none;
     }
 
-    .contacts-header {
-        margin-top: 20px;
-        height: 40px;
+    .contacts-header .container {
+        width: 100%;
+        justify-content: space-around;
     }
 
-    .contacts-header .container {
-        height: 40px;
-    }
 
     .contacts-header div.logo {
         display: flex;
         margin-right: 0;
-        width: 290px;
         justify-content: space-between;
     }
 
     .contacts-header div.account {
-        display: inline;
+        display: flex;
+        width: 220px;
+        justify-content: space-between;
         height: 20px;
         font-size: 0;
         line-height: 0;
+    }
+
+    .account img {
+        display: flex;
     }
 
     .contacts-header img.logo {
@@ -113,8 +115,31 @@
     header .header-main {
         width: 100%;
         height: 655px;
+        margin-bottom: 40px;
         overflow: hidden;
         background: url(../img/helicopter-main.jpg) no-repeat 65%;
+    }
+
+    .about .container {
+        flex-direction: column-reverse;
+    }
+
+    .about__side .more-info {
+        margin-bottom: 0;
+    }
+
+    .page-main__about img {
+        display: block;
+        width: 290px;
+        margin-bottom: 30px;
+    }
+
+    .page-main__heading {
+        margin-bottom: 15px;
+    }
+
+    .page-main__photo {
+        display: none;
     }
 
     .header-main p {
@@ -130,10 +155,13 @@
 
     .header-main .price {
         margin-left: 10px;
+        margin-bottom: 18px;
     }
 
     .header-main a.btn {
-        margin-left: 10px;
+        width: 275px;
+        font-size: 16px;
+        margin-top: 0;
     }
 
     .page-main .image-content img {
@@ -149,8 +177,8 @@
 
     .page-main p.description {
         width: 290px;
-        height: 300px;
-
+        margin: 0;
+        margin-bottom: 25px;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -169,6 +197,7 @@
         display: flex;
         flex-wrap: wrap;
         padding-top: 14px;
+        align-items: center;
     }
 
     .page-main hr {
@@ -179,6 +208,11 @@
 
     .page-main p.reviews::before {
         margin-right: 12px;
+    }
+
+    .page-main p.reviews::after {
+        margin-right: 12px;
+        margin-left: 42px;
     }
 
     h2.package {
@@ -282,8 +316,16 @@
         }
     }
 
-    .about .image-content {
+    .about__main {
+        width: 290px;
+        flex-direction: column;
+    }
+
+
+    .about__side {
         max-width: 290px;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .about .image-content img {
@@ -307,7 +349,7 @@
     }
 
     .about h2.package {
-        margin: 45px 0 0;
+        margin: 22px 0 0;
         padding-bottom: 14px;
         font-size: 18px;
         line-height: 26px;
@@ -382,12 +424,27 @@
     table.mobile .reviews {
         padding-top: 32px;
         padding-bottom: 32px;
+
+        width: 290px;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #37373F;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    table.mobile .reviews::after {
+        margin-left: 45px;
     }
 
     .map {
         width: 100%;
         background-position: 56%;
         margin-bottom: 0;
+        background-size: auto;
     }
 
     .map .order {
@@ -446,8 +503,8 @@
         text-align: center;
     }
 
-    .slide2 {
-        content: 'Где встречаемся?  Москва';
+    .slide2::after {
+        content: 'Сколько стоит?  1500Р';
         display: block;
         width: 150px;
         margin: 10px auto 0;
@@ -458,7 +515,7 @@
         text-align: center;
     }
 
-    .slide3 {
+    .slide3::after {
         content: 'Где встречаемся?  Москва';
         display: block;
         width: 150px;
@@ -530,33 +587,37 @@
         margin-bottom: 20px;
     }
 
-    .comment-container {
-        margin-top: 40px;
-    }
 
     .comment {
         position: relative;
     }
 
-    .comment-container .remarks {
-        display: inline-flex;
-        position: absolute;
-        top: 115px;
-        left: -45px;
+    .comment-avatar, .comment-avatar img {
+        width: 84px;
     }
+
+    .comment-container {
+
+        margin-bottom: 80px;
+    }
+
 
     .comment-container .comment-text {
         width: 290px;
-        min-height: 147px;
     }
 
-    .comment {
-        height: 497px;
+    .comment__info {
+        width: 186px;
     }
 
-    footer, .footer-main {
-        max-width: 320px;
+    .comment-text {
+        margin: 0;
     }
+
+    .remarks {
+        display: none;
+    }
+
 
     .logo-footer {
         width: 84px;
@@ -569,7 +630,52 @@
         display: none;
     }
 
-    .image-content a {
-        display: none;
+    .person__about--wrapper {
+        width: 156px;
+    }
+
+    .remarks__mobile {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+        vertical-align: text-bottom;
+        margin: 24px 0;
+
+        color: #B3B3B3;
+    }
+
+    .remarks__mobile::before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 12px;
+        margin-right: 5px;
+        background-image: url("../img/svg/okIcon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .footer .container {
+        width: 100%;
+    }
+
+    .footer-main .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .support {
+        width: 100%;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #B3B3B3;
+
+        text-align: center;
+    }
+
+    .payback {
+        margin-left: 15px;
     }
 }
